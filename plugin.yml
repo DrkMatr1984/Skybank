@@ -1,0 +1,95 @@
+name: Skybank
+main: Neptuner.Bank.Plugin
+version: 1.5.3
+description: Item banking made simple.
+authors: [Neptuner, lemon42]
+website: 'http://dev.bukkit.org/server-mods/skybank/'
+database: false
+depend: [Vault]
+commands:
+  bank:
+    aliases: skybank
+    description: All bank commands.
+  bank help:
+    description: View Commands help screen.
+  bank buy:
+    description: Buy a bank slot.
+  bank open:
+    description: Open a bank slot.
+  bank list:
+    description: List your bank slots.
+  bank delete:
+    description: Delete a bank slot.
+  bank price:
+    description: Get the price of a bank slot.
+  bank rename:
+    description: Rename a bank slot.
+
+permissions:
+    bank.*:
+        description: Gives access to all bank commands and signs.
+        children:
+            bank.open: true
+            bank.open.any: true
+            bank.buy: true
+            bank.list: true
+            bank.list.any: true
+            bank.delete: true
+            bank.delete.any: true
+            bank.help: true
+        default: op
+    bank.sign.*:
+        description: Gives access to all bank signs.
+        children:
+            bank.sign.open: true
+            bank.sign.buy: true
+            bank.sign.list: true
+            bank.sign.delete: true
+            bank.sign.place: true
+            bank.sign.break: true
+        default: op
+    bank.open:
+        description: Open a bank slot.
+        default: true
+    bank.open.any:
+        description: Open any bank slot.
+        default: op
+    bank.list:
+        description: List your bank slots.
+        default: true
+    bank.list.any:
+        description: 'List anyone''s bank slots.'
+        default: op
+    bank.delete:
+        description: Delete a bank slot.
+        default: true
+    bank.delete.any:
+        description: Delete any bank slot.
+        default: op
+    bank.buy:
+        description: Buy a bank slot.
+        default: true
+    bank.help:
+        description: View Commands help screen.
+        default: true
+    bank.sign.open:
+        description: Open a bank slot from a sign.
+        default: true
+    bank.sign.list:
+        description: List your bank slots from a sign.
+        default: true
+    bank.sign.delete:
+        description: Delete a bank slot from a sign.
+        default: true
+    bank.sign.buy:
+        description: Buy a bank slot from a sign.
+        default: true
+    bank.sign.price:
+        description: View price for next bank slont form a sign.
+        default: true
+    bank.sign.place:
+        description: Place bank signs.
+        default: op
+    bank.sign.break:
+        description: Break bank signs.
+        default: op

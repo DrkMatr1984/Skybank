@@ -1,0 +1,27 @@
+Skybank TODO list
+
+! is important
+* is normal
+/ is done
+
+------------------------
+Skybank 1.6:
+------------------------
+/ Fix permissions
+/ Fix corruption bug
+* More admin commands
+* Check command, browse for corrupted slots
+------------------------
+Skybank 1.5:
+------------------------
+/ New save format
+/ Fix config files
+/ Fix slots getting corrupt
+/ Admin commands (clear, anything else?)
+/ Admin slot access
+------------------------
+Skybank future:
+------------------------
+* Shared and passworded slots
+* Searching banks (maybe not, takes ressources) --> Async! :)
+* Item organization

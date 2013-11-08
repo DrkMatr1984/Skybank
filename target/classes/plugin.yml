@@ -1,6 +1,6 @@
 name: Skybank
 main: Neptuner.Bank.Plugin
-version: 1.5.3
+version: 1.5.4
 description: Item banking made simple.
 authors: [Neptuner, lemon42]
 website: 'http://dev.bukkit.org/server-mods/skybank/'
